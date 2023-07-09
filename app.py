@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Load Google Calendar API credentials
 credentials = service_account.Credentials.from_service_account_file(
-    'API Credentials/credentials.json',
+    'credentials.json',
     scopes=['https://www.googleapis.com/auth/calendar']
 )
 service = build('calendar', 'v3', credentials=credentials)
